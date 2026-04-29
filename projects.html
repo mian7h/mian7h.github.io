@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Mian Muhammad Abdul Hamid</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Epilogue:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">&#x25C6; Mian Hamid</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="outcomes.html">Learning Outcomes</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="mono label-tag">&#x25C6; Portfolio Projects</p>
+      <h1>Selected<br/><em>Project Work</em></h1>
+      <p>Three projects from the MS Applied Data Science program, each representing a different domain, technique set, and stakeholder context.</p>
+    </div>
+  </section>
+
+  <div class="container">
+
+    <section class="project-detail reveal" id="restaurant">
+      <div class="project-detail-header">
+        <span class="course-tag">&#x25C6; IST 707 &middot; Applied Machine Learning &middot; Spring 2026</span>
+        <h2>Predicting NYC Restaurant Inspection Likelihood</h2>
+        <p>Using historical inspection patterns to help restaurant owners prepare proactively for future inspections, shifting the NYC DOHMH from a reactive scheduling model to a risk-based, data-driven approach.</p>
+      </div>
+      <div class="project-meta">
+        <div class="meta-item"><div class="meta-label">Dataset Source</div><div class="meta-val">NYC DOHMH Open Data</div></div>
+        <div class="meta-item"><div class="meta-label">Primary Tools</div><div class="meta-val">Python &middot; Scikit-learn &middot; Pandas</div></div>
+        <div class="meta-item"><div class="meta-label">Model Type</div><div class="meta-val">Classification (B/C Grade Risk)</div></div>
+        <div class="meta-item"><div class="meta-label">Core Goal</div><div class="meta-val">Risk-based inspection prioritization</div></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <h4>Project Overview</h4>
+          <p>The NYC Department of Health and Mental Hygiene currently conducts restaurant inspections on a fixed schedule, typically once per year for all establishments regardless of their compliance history. This one-size-fits-all approach means limited inspector resources are distributed evenly even when risk is not.</p>
+          <p>This project built a machine learning system that identifies restaurants at high risk of receiving poor inspection grades (B or C) before their scheduled inspections occur. By shifting from reactive to proactive, inspectors can focus where they are most needed, potentially preventing food safety incidents before they happen.</p>
+          <h4>Approach and Methodology</h4>
+          <p>The model analyzed multiple signals: restaurant characteristics such as cuisine type, borough, and establishment age; historical inspection patterns including prior grades and violation counts; temporal trends in violation frequency; and neighborhood-level factors that correlate with compliance patterns.</p>
+          <p>A key design principle was interpretability. Unlike black-box models that maximize accuracy at the expense of explainability, this system produces predictions that can be explained to restaurant owners and justified to the public — making the choice of model architecture both a technical and ethical decision.</p>
+        </div>
+        <div>
+          <h4>What Makes This Novel</h4>
+          <p>While prior research has explored predictive inspection models, this project incorporated a richer feature set including temporal patterns and neighborhood characteristics beyond what earlier studies have used. The focus on NYC's A/B/C grading system made predictions directly actionable for restaurant owners who understand exactly what each grade means for their business.</p>
+          <p>The model was designed with multiple stakeholder audiences in mind: health inspectors need prioritized risk queues; restaurant owners need understandable risk signals; the public needs confidence the system is fair. These competing needs shaped every design decision.</p>
+          <div class="outcomes-met">
+            <h4>Program Outcomes Demonstrated</h4>
+            <div class="outcome-badges">
+              <span class="outcome-badge">02 &middot; Actionable Insight</span>
+              <span class="outcome-badge">03 &middot; Predictive Modeling</span>
+              <span class="outcome-badge">04 &middot; Python / ML</span>
+              <span class="outcome-badge">05 &middot; Communication</span>
+              <span class="outcome-badge">06 &middot; Ethics / Fairness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-detail reveal" id="tap">
+      <div class="project-detail-header">
+        <span class="course-tag">&#x25C6; IST 737 &middot; Visual Analytic Dashboards &middot; Spring 2026</span>
+        <h2>Two Decades of Student Aid: Is NY's TAP Keeping Up?</h2>
+        <p>Analyzing New York State's Tuition Assistance Program from 2000 to present to surface inequities in aid distribution across income levels, age groups, and institution types.</p>
+      </div>
+      <div class="project-meta">
+        <div class="meta-item"><div class="meta-label">Dataset Source</div><div class="meta-val">NY State Open Data Portal</div></div>
+        <div class="meta-item"><div class="meta-label">Primary Tool</div><div class="meta-val">Tableau</div></div>
+        <div class="meta-item"><div class="meta-label">Analysis Type</div><div class="meta-val">Time Series &middot; Comparative</div></div>
+        <div class="meta-item"><div class="meta-label">Time Range</div><div class="meta-val">2000 to Present</div></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <h4>Project Overview</h4>
+          <p>New York's Tuition Assistance Program is the state's largest financial aid initiative, supporting eligible residents in paying tuition at in-state colleges. But as tuition costs have climbed and demographics have shifted, the question of whether TAP has kept pace — and whether it serves all groups equitably — is both a policy and a data question.</p>
+          <p>This project used publicly available annual records of TAP recipient counts and total award amounts, categorized by income group, age group, and program type, to trace how the program has evolved since 2000. The dataset contains both numerical and categorical variables, making it suitable for time series and comparative breakdowns.</p>
+          <h4>Visualization Design</h4>
+          <p>The primary deliverable was a Tableau dashboard built for a non-technical audience: policymakers, students, and administrators who need to understand funding patterns without statistical expertise. The design focused on clarity and narrative, leading with the big-picture trend then allowing users to drill into demographic breakdowns.</p>
+          <p>A key design decision was to frame the data around access and affordability rather than raw award totals — turning a dataset into an argument about equity.</p>
+        </div>
+        <div>
+          <h4>Key Insights</h4>
+          <p>The analysis revealed meaningful shifts in how TAP dollars are distributed across income brackets and age groups over two decades. Certain program types saw significant changes in recipient volume that do not align with broader enrollment trends, suggesting structural shifts in eligibility or program design worth further investigation.</p>
+          <p>Financial aid access is a gateway to educational opportunity, and data can make visible the patterns that policy debates often treat as abstract.</p>
+          <div class="outcomes-met">
+            <h4>Program Outcomes Demonstrated</h4>
+            <div class="outcome-badges">
+              <span class="outcome-badge">01 &middot; Data Collection</span>
+              <span class="outcome-badge">02 &middot; Actionable Insight</span>
+              <span class="outcome-badge">03 &middot; Visualization</span>
+              <span class="outcome-badge">05 &middot; Communication</span>
+              <span class="outcome-badge">06 &middot; Equity / Ethics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-detail reveal" id="cosmetics">
+      <div class="project-detail-header">
+        <span class="course-tag">&#x25C6; IST 652 &middot; Scripting for Data Analysis &middot; Fall 2025</span>
+        <h2>Hazardous Cosmetic Chemical Disclosures in California (2007&#8211;2020)</h2>
+        <p>Investigating 114,000+ chemical disclosure records from California's Safe Cosmetics Program to identify usage trends, company behavior, and the relationship between chemical complexity and product discontinuation.</p>
+      </div>
+      <div class="project-meta">
+        <div class="meta-item"><div class="meta-label">Dataset Source</div><div class="meta-val">CA Safe Cosmetics Program</div></div>
+        <div class="meta-item"><div class="meta-label">Original Dataset</div><div class="meta-val">114,635 rows &times; 22 columns</div></div>
+        <div class="meta-item"><div class="meta-label">Tools Used</div><div class="meta-val">Python &middot; Pandas &middot; Seaborn &middot; Matplotlib</div></div>
+        <div class="meta-item"><div class="meta-label">Time Range</div><div class="meta-val">2007 to 2020</div></div>
+      </div>
+      <div class="project-body">
+        <div>
+          <h4>Project Overview</h4>
+          <p>California's Safe Cosmetics Program requires manufacturers to report cosmetic ingredients known or suspected to cause cancer, birth defects, or reproductive harm. The result is a rich, policy-relevant public dataset spanning 13 years and over 114,000 product-chemical combinations.</p>
+          <p>This project examined how chemicals are distributed across cosmetic products, companies, and product categories, and whether chemical count correlates with product discontinuation rates.</p>
+          <h4>Data Cleaning and Engineering</h4>
+          <p>The raw dataset contained 114,635 rows across 22 columns. Through systematic deduplication, removal of records with missing critical fields, and feature engineering, the cleaned dataset was brought to approximately 41,000 high-quality observations across 13 key analytical variables.</p>
+          <p>Every decision about what to keep and remove reflects assumptions about what matters — and documenting those decisions transparently was a core part of the project.</p>
+        </div>
+        <div>
+          <h4>Key Findings</h4>
+          <p>Products containing higher chemical counts were significantly more likely to be discontinued, suggesting that product complexity is a marker of both regulatory risk and consumer safety concern. Titanium dioxide appeared in 31,989 records, making it by far the most commonly reported ingredient in the dataset.</p>
+          <p>Reframing this project for portfolio presentation means centering the human story: chemical transparency in consumer products has measurable consequences for what stays on shelves. This is a public health story, not just a technical one.</p>
+          <div class="outcomes-met">
+            <h4>Program Outcomes Demonstrated</h4>
+            <div class="outcome-badges">
+              <span class="outcome-badge">01 &middot; Data Collection</span>
+              <span class="outcome-badge">02 &middot; Actionable Insight</span>
+              <span class="outcome-badge">03 &middot; EDA Visualization</span>
+              <span class="outcome-badge">04 &middot; Python / Pandas</span>
+              <span class="outcome-badge">06 &middot; Transparency</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="mono">&#x25C6; Mian Muhammad Abdul Hamid</p>
+        <p>MS Applied Data Science &middot; Syracuse University &middot; iSchool &middot; Graduating May 2026</p>
+        <p style="margin-top:0.5rem;"><a href="https://www.linkedin.com/in/mian-hamid" target="_blank" style="color:var(--gold);text-decoration:none;">linkedin.com/in/mian-hamid</a> &nbsp;&middot;&nbsp; <a href="mailto:mmhamid@syr.edu" style="color:var(--gold);text-decoration:none;">mmhamid@syr.edu</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="outcomes.html">Outcomes</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
