@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learning Outcomes | Mian Muhammad Abdul Hamid</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Epilogue:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">&#x25C6; Mian Hamid</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="outcomes.html" class="active">Learning Outcomes</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="mono label-tag">&#x25C6; Program Learning Outcomes</p>
+      <h1>How I Achieved<br/><em>Each Outcome</em></h1>
+      <p>A detailed mapping of the six MS Applied Data Science program learning outcomes to my coursework, projects, and growth as a practitioner.</p>
+    </div>
+  </section>
+
+  <section class="outcomes-full">
+    <div class="container">
+
+      <div class="outcome-block reveal">
+        <div class="outcome-block-num">01</div>
+        <div class="outcome-block-content">
+          <span class="official">Official Outcome</span>
+          <h3>Collect, Store, and Access Data</h3>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;">"Identifying and leveraging applicable technologies."</p>
+          <p>In my own words, this outcome is about knowing where data lives, how to get it reliably, and how to manage it at scale without losing quality along the way. It is the foundation everything else is built on.</p>
+          <p>I demonstrated this most directly in my Hazardous Cosmetic Chemical Disclosures project, where I sourced over 114,000 records from the California Safe Cosmetics Program's public dataset and built a systematic Python-based pipeline to ingest, clean, and restructure it. I also worked with New York State's TAP Open Data portal for my Visual Analytics project, learning how to navigate public data infrastructure and evaluate dataset reliability before building any analysis on top of it.</p>
+          <div class="projects-linked">
+            <span>&#x25C6; IST 652 &mdash; Cosmetic Chemical Disclosures</span>
+            <span>&#x25C6; IST 737 &mdash; TAP Financial Aid Analysis</span>
+            <span>&#x25C6; IST 707 &mdash; NYC Restaurant Inspections</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block reveal">
+        <div class="outcome-block-num">02</div>
+        <div class="outcome-block-content">
+          <span class="official">Official Outcome</span>
+          <h3>Create Actionable Insight</h3>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;">"Across societal, business, and political contexts, using the full data science lifecycle."</p>
+          <p>This outcome asks more than "what does the data say?" It asks: so what? What should someone do differently because of this analysis? Every project I have completed has been anchored by a real-world question with meaningful consequences if left unanswered.</p>
+          <p>My restaurant inspection model generates risk scores that could help the NYC Department of Health prioritize limited inspector resources. My TAP analysis surfaces funding gaps that affect which New Yorkers can actually afford college. My cosmetics project revealed that products with higher chemical complexity are significantly more likely to be discontinued — a finding with direct implications for both regulators and consumers. In each case, the analysis ends with a recommendation, not just a result.</p>
+          <div class="projects-linked">
+            <span>&#x25C6; IST 707 &mdash; Risk-based inspection model</span>
+            <span>&#x25C6; IST 737 &mdash; Education equity insights</span>
+            <span>&#x25C6; IST 652 &mdash; Regulatory risk findings</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block reveal">
+        <div class="outcome-block-num">03</div>
+        <div class="outcome-block-content">
+          <span class="official">Official Outcome</span>
+          <h3>Apply Visualization and Predictive Models</h3>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;">"To help generate actionable insight."</p>
+          <p>Visualization and modeling are not separate skills — they are two ways of making patterns legible. A model tells you something is true; a visualization helps people believe it and act on it.</p>
+          <p>In IST 707, I built a machine learning classification model to predict which NYC restaurants were at high risk of receiving poor inspection grades. In IST 737, I designed multi-layered Tableau dashboards that made two decades of financial aid data navigable for non-technical audiences. In IST 652, I used Seaborn and Matplotlib to construct visualizations that illustrated chemical frequency distributions and discontinuation correlations. Across all three, the visual and the model worked together — one producing the insight, the other communicating it.</p>
+          <div class="projects-linked">
+            <span>&#x25C6; IST 707 &mdash; ML classification model</span>
+            <span>&#x25C6; IST 737 &mdash; Tableau dashboard design</span>
+            <span>&#x25C6; IST 652 &mdash; EDA visualizations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block reveal">
+        <div class="outcome-block-num">04</div>
+        <div class="outcome-block-content">
+          <span class="official">Official Outcome</span>
+          <h3>Use Programming Languages</h3>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;">"Such as R and Python to support the generation of actionable insight."</p>
+          <p>Programming is the primary tool through which I have learned to think analytically. Writing code forces precision — you cannot wave your hands at a dataset; you have to tell it exactly what to do, step by step.</p>
+          <p>Python has been my core language throughout the program. In IST 652, I used Pandas for large-scale data wrangling — reducing 114,000 raw records to 41,000 high-quality observations through deduplication and feature engineering. In IST 707, I implemented scikit-learn pipelines for model training, evaluation, and cross-validation. I have also worked with NumPy, Matplotlib, Seaborn, PySpark, and R across multiple projects inside and outside this program.</p>
+          <div class="projects-linked">
+            <span>&#x25C6; IST 652 &mdash; Python / Pandas / NumPy</span>
+            <span>&#x25C6; IST 707 &mdash; Scikit-learn / ML pipelines</span>
+            <span>&#x25C6; QRDS &mdash; Statistical inference</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block reveal">
+        <div class="outcome-block-num">05</div>
+        <div class="outcome-block-content">
+          <span class="official">Official Outcome</span>
+          <h3>Communicate Insights</h3>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;">"To a broad range of audiences including project sponsors and technical team leads."</p>
+          <p>The ability to translate findings is, in many ways, more important than the ability to generate them. A model that no one understands gets ignored. A visualization that confuses people causes harm. Communication is where data science either succeeds or fails in the real world.</p>
+          <p>My TAP dashboard was explicitly designed for non-technical stakeholders — policymakers, administrators, students — who need to understand funding equity without knowing what a confidence interval is. My restaurant inspection project was designed with restaurant owners as a primary audience, requiring clear interpretable risk outputs rather than raw model scores. As President of SAIL and Interfaith Engagement Coordinator at Hendricks Chapel, I have spent years practicing the same skill in a different context: making complex ideas accessible across communities that do not share vocabulary or frameworks.</p>
+          <div class="projects-linked">
+            <span>&#x25C6; IST 737 &mdash; Non-technical Tableau storytelling</span>
+            <span>&#x25C6; IST 707 &mdash; Stakeholder-facing risk outputs</span>
+            <span>&#x25C6; IST 782 &mdash; This portfolio itself</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="outcome-block reveal">
+        <div class="outcome-block-num">06</div>
+        <div class="outcome-block-content">
+          <span class="official">Official Outcome</span>
+          <h3>Apply Ethics in Data and Predictive Models</h3>
+          <p style="font-family:var(--font-mono);font-size:0.8rem;color:var(--text-muted);margin-bottom:1rem;">"Fairness, bias, transparency, and privacy."</p>
+          <p>Ethics in data science is not a separate module you take and check off — it is a lens you apply every time you make a decision about what data to use, how to model it, and who will be affected by what you find.</p>
+          <p>My background in information security has sharpened my awareness of how data can be misused. In the restaurant inspection project, I was conscious that a biased model could unfairly target restaurants in certain neighborhoods or cuisines — so interpretability and bias auditing were built into the design from the start. In the TAP analysis, I examined how aid has historically underserved lower-income and older students — an ethical framing, not just an analytic one. In the cosmetics project, the entire premise was about what companies disclose versus what they do not — a transparency question at its core.</p>
+          <div class="projects-linked">
+            <span>&#x25C6; IST 707 &mdash; Model fairness &amp; interpretability</span>
+            <span>&#x25C6; IST 737 &mdash; Equity-centered analysis</span>
+            <span>&#x25C6; IST 652 &mdash; Regulatory transparency</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="mono">&#x25C6; Mian Muhammad Abdul Hamid</p>
+        <p>MS Applied Data Science &middot; Syracuse University &middot; iSchool &middot; Graduating May 2026</p>
+        <p style="margin-top:0.5rem;"><a href="https://www.linkedin.com/in/mian-hamid" target="_blank" style="color:var(--gold);text-decoration:none;">linkedin.com/in/mian-hamid</a> &nbsp;&middot;&nbsp; <a href="mailto:mmhamid@syr.edu" style="color:var(--gold);text-decoration:none;">mmhamid@syr.edu</a></p>
+      </div>
+      <div class="footer-links">
+        <a href="outcomes.html">Outcomes</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
