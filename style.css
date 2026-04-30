@@ -304,8 +304,8 @@ body {
 }
 
 .hero-photo-frame {
-  width: 320px;
-  height: 400px;
+  width: 280px;
+  height: 340px;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid rgba(232,168,56,0.25);
@@ -378,8 +378,8 @@ body {
     margin: 0 auto;
   }
   .hero-photo-frame {
-    width: 220px;
-    height: 280px;
+    width: 160px;
+    height: 200px;
   }
   .hero-cta {
     justify-content: center;
